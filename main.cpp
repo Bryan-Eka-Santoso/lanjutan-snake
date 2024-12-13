@@ -133,12 +133,15 @@ int main()
 
         system("cls");
 
+        bool simpan;
         switch (menu)
         {
         case 1:
         {
             bool duplicate;
-            bool simpan;
+            char key;
+            bool gameOver = false;
+            simpan = false;
             score = 0;
             n = 5;
 
@@ -175,9 +178,6 @@ int main()
             food.x = rand() % 70 + 5;
             food.y = rand() % 20 + 3;
 
-            char key;
-            bool gameOver = false;
-            simpan = false;
             while (key != 27 && gameOver == false && simpan == false)
             {
                 //cetak
@@ -355,11 +355,12 @@ int main()
         }
         case 2:
         {
-            bool duplicate;
-            bool simpan;
-
-            system("cls");
-
+            if(simpan != true){
+                cout << "You don't have a saved game. Please play a new game first!" << endl;
+                Sleep(500);
+                system("cls");
+                break;
+            } else {
             for (int i = 0; i < n; i++)
             {
                 snake[i].x = 20 + i;
@@ -547,10 +548,12 @@ int main()
                 saveLeaderboardHistory(leaderboardUsername, leaderboardScore, historyUsername, historyScore);
 
                 remove("savegame.txt");
+                gameOver = false;
             }
 
             Sleep(1000);
             system("cls");
+            }
             break;
         }
         case 3:

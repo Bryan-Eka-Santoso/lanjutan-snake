@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1734019887 source:d:\praktikum\latihan\gameular\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	<fstream>
+
+1734015790 source:c:\users\a205\downloads\snake-gamev1-main\snake-gamev1-main\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	<fstream>
+
+1734071669 source:w:\snake-gamev1-main\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	<fstream>
+
